@@ -1,4 +1,5 @@
 // Global app controller
-import num from './test';
-const x = 23;
-console.log(`I imported ${num} from another module. Variable x is ${x}`);
+import Search from './models/Search';
+
+const res = new Search('onion');
+res.getResults();
