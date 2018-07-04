@@ -61,7 +61,8 @@ export default class Recipe {
         }
         objIng = {
           count,
-          unit: arrIng.slice(unitIndex + 1).join(' ')
+          unit: '',
+          ingredient: arrIng.slice(unitIndex + 1).join(' ')
         }
       } else if (parseInt(arrIng[0], 10)) {
         // There is NO unit, but 1st el is a number
